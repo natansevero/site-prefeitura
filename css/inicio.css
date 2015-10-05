@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 4px;
+	border: 2px dashed black; /* ilustrativo */
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	height: 5000px; /* Ilustrativo */
+}
+
+header {
+	border: 2px dotted black; /* ilustrativo */
+	padding: 4px;
+	height: 200px; /* Ilustratvo */
+}
+
+/* Tudo relacionado a NAV */
+
+nav {
+	border: 2px solid black; /* ilustrativo */
+	padding: 4px; 
+	position: relative;
+}
+
+nav div.little_logo {
+	border: 2px solid black; /* ilustrativo */
+	display: inline-block;
+}
+
+nav ul.menu{
+	border: 2px solid black; /* ilustrativo */
+	display: inline-block;
+	position: absolute;
+	right: 4px; /* Mesmo valor do PADDING da NAV por questão estética */
+}
+
+nav ul.menu li {
+	display: inline;
+}
+
+nav ul.menu li a {
+	text-decoration: none;
+}
