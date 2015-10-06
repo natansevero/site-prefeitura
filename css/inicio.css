@@ -7,45 +7,73 @@
 }
 
 body {
+	/*border: 2px dashed black; /* ilustrativo */
+	height: 5000px; /* Ilustrativo */
 	width: 1024px;
 	margin: 0 auto;
 	padding: 4px;
-	border: 2px dashed black; /* ilustrativo */
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 14px;
-	height: 5000px; /* Ilustrativo */
 }
 
 header {
-	border: 2px dotted black; /* ilustrativo */
+	/*border: 2px dotted black; /* ilustrativo */
 	padding: 4px;
-	height: 200px; /* Ilustratvo */
+	height: 260px;
+	background-image: url("../img/header_logo.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 /* Tudo relacionado a NAV */
 
 nav {
-	border: 2px solid black; /* ilustrativo */
+	/*border: 2px solid black; /* ilustrativo */
 	padding: 4px; 
 	position: relative;
+	height: 55px;
 }
 
-nav div.little_logo {
-	border: 2px solid black; /* ilustrativo */
+nav div#little_logo {
+	/*border: 2px solid black; /* ilustrativo */
 	display: inline-block;
+	background-image: url("../img/little_logo.jpg");
+	background-repeat: no-repeat;
+	height: 35px;
+	width: 330px;
+	font-size: 20px;
+	padding-left: 55px;
+	padding-top: 15px; 
 }
+
 
 nav ul.menu{
-	border: 2px solid black; /* ilustrativo */
+	/*border: 2px solid black; /* ilustrativo */
 	display: inline-block;
 	position: absolute;
 	right: 4px; /* Mesmo valor do PADDING da NAV por questão estética */
+	margin-top: 16px;
 }
 
 nav ul.menu li {
+	border: 2px solid black;
 	display: inline;
+	margin-left: 14px;
+	padding: 6px;
+	font-size: 18px;
+	background-color: red;
+	border-radius: 10px;
 }
 
 nav ul.menu li a {
 	text-decoration: none;
+	color: white;
+}
+
+nav ul.menu li a:hover {
+	
+}
+
+nav ul.menu li a.selected {
+	
 }
