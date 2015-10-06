@@ -21,8 +21,7 @@ header {
 	height: 270px;
 	background-image: url("../img/header_logo.jpg");
 	background-repeat: no-repeat;
-	background-position: bottom;
-	border-image: 
+	background-position: bottom; 
 
 }
 
@@ -32,9 +31,16 @@ nav {
 	border: 5px solid #aa0000; 
 	border-radius: 10px;
 	padding: 4px; 
-	position: relative;
+	position: absolute;
+	width: 1006px;
 	height: 52px;
+	background-color: white;
+}
 
+/* CSS efeito do Menu Fixo do JQuery */
+.menu-fixo {
+	position: fixed;
+	z-index: 999;
 }
 
 nav div#little_logo {
@@ -54,8 +60,8 @@ nav div#little_logo {
 nav ul.menu{
 	/*border: 2px solid black; /* ilustrativo */
 	display: inline-block;
-	position: absolute;
-	right: 4px; /* Mesmo valor do PADDING da NAV por questão estética */
+	position: relative;
+	left: 140px; /* Mesmo valor do PADDING da NAV por questão estética */
 	margin-top: 16px;
 }
 
