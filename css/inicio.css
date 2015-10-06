@@ -18,20 +18,23 @@ body {
 
 header {
 	/*border: 2px dotted black; /* ilustrativo */
-	padding: 4px;
-	height: 260px;
+	height: 270px;
 	background-image: url("../img/header_logo.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom;
+	border-image: 
+
 }
 
 /* Tudo relacionado a NAV */
 
 nav {
-	/*border: 2px solid black; /* ilustrativo */
+	border: 5px solid #aa0000; 
+	border-radius: 10px;
 	padding: 4px; 
 	position: relative;
-	height: 55px;
+	height: 52px;
+
 }
 
 nav div#little_logo {
@@ -42,6 +45,7 @@ nav div#little_logo {
 	height: 35px;
 	width: 330px;
 	font-size: 20px;
+	color: #aa0000;
 	padding-left: 55px;
 	padding-top: 15px; 
 }
@@ -56,24 +60,43 @@ nav ul.menu{
 }
 
 nav ul.menu li {
-	border: 2px solid black;
+	/*border: 1px solid black; /* ilustrativo */
 	display: inline;
-	margin-left: 14px;
-	padding: 6px;
+	padding: 6px;	
 	font-size: 18px;
-	background-color: red;
-	border-radius: 10px;
-}
-
-nav ul.menu li a {
-	text-decoration: none;
+	height: 20px; 
 	color: white;
 }
 
-nav ul.menu li a:hover {
-	
+nav ul.menu li a {
+	/*border: 1px solid black; /* ilustrativo */
+	padding: 20px 10px 20px 10px;
+	text-decoration: none;
+	color: #aa0000;
+	margin-left: -17px;
 }
 
+nav ul.menu li a:hover {
+	background-color: #aa0000;
+	color: white;  
+	/*background-image: url("../img/underline.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 2px;*/
+}
+
+
 nav ul.menu li a.selected {
-	
+	background-color: #aa0000;
+	color: white;
+	/*background-image: url("../img/underline.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 2px;*/
+}
+
+/* SECTION do conteúdo da página */
+
+section {
+	border: 2px solid black;
 }
