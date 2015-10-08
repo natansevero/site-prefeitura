@@ -8,7 +8,7 @@
 
 body {
 	/*border: 2px dashed black; /* ilustrativo */
-	height: 5000px; /* Ilustrativo */
+	/*height: 5000px; /* Ilustrativo */
 	width: 1024px;
 	margin: 0 auto;
 	padding: 4px;
@@ -19,10 +19,9 @@ body {
 header {
 	/*border: 2px dotted black; /* ilustrativo */
 	height: 270px;
-	background-image: url("../img/header_logo.jpg");
+	background-image: url("../img/header-logo.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom; 
-
 }
 
 /* Tudo relacionado a NAV */
@@ -35,6 +34,7 @@ nav {
 	width: 1006px;
 	height: 52px;
 	background-color: white;
+	z-index: 999;
 }
 
 /* CSS efeito do Menu Fixo do JQuery */
@@ -43,11 +43,12 @@ nav {
 	z-index: 999;
 	top: 0;
 }
+/* ^^^^^^^^^^ */
 
-nav div#little_logo {
-	/*border: 2px solid black; /* ilustrativo */
+nav div#little-logo {
+	/* border: 2px solid black; /* ilustrativo */
 	display: inline-block;
-	background-image: url("../img/little_logo.jpg");
+	background-image: url("../img/little-logo.jpg");
 	background-repeat: no-repeat;
 	height: 35px;
 	width: 330px;
@@ -104,6 +105,166 @@ nav ul.menu li a.selected {
 
 /* SECTION do conteúdo da página */
 
-section {
-	border: 2px solid black;
+section.conteudo {
+	/*border: 2px solid black; /* Ilustrativo */
+	height: 1000px; /* Ilustrativo */
+	padding: 4px;
+}
+
+
+
+/* Tudo relacionado ao Slide */
+figure#slide { 
+	width: 1016px;
+	height: 500px; 
+	overflow: hidden;  
+	margin: 10px auto; 
+	box-shadow: 0 0 8px #000; 
+	position: relative; 
+} 
+
+#slide img { 
+	position: absolute; 
+	z-index: 1; 
+	display: none; 
+	left: 0; 
+} 
+
+#slide a p{ 
+	z-index:2; 
+	position: absolute; 
+	bottom: 0; 
+	left: 0; 
+	width: 100%; 
+	padding: 10px; 
+	font-family: "Robot", sans-serif; 
+	font-size: 18px; 
+	background: rgba(0,0,0,0.5); 
+	color: #fff;
+	text-decoration: none; 
+}
+
+#slide a p:hover{ 
+ 	text-decoration: underline;
+
+}
+
+/* ^^^^^^^^ */
+
+/* Footer(Rodapé da página) */
+
+footer {
+	border: 5px solid #b0b0b0;
+	border-radius: 10px;
+}
+
+footer section.first {
+	height: 104px;
+	padding: 4px;
+	background-color: #aa0000;
+	position: relative; 
+}
+ /* Divs dentro do primira section da footer */
+footer section.first div.footer-logo {
+	border: 2px solid #b0b0b0;
+	border-radius: 10px;
+	display: inline-block;
+	background-image: url("../img/footer-logo.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	width: 90px;
+	height: 100px;
+}
+
+footer section.first div.desc-mauriti {
+	/*border: 2px solid black; /* ilusrativo */
+	display: inline-block;
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	left: 150px;
+	margin: 4px 0 4px 0;	
+}
+
+footer section.first div.desc-mauriti h1{
+	/*border: 2px solid black; /* ilustrativo */
+	margin-top: 6px;
+	margin-bottom: 6px;
+	font-size: 20px;
+	color: white;
+}
+
+footer section.first div.desc-mauriti p{
+	/*border: 2px solid black; /* ilustrativo */
+	margin-bottom: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-align: justify;
+}
+
+/* Tudo relacionado a div da classe Social */
+
+footer section.first div.social {
+	border: 2px solid #b0b0b0;
+	border-radius: 10px;
+	background-color: white;
+	display: inline-block;
+	width: 270px;
+	height: 96px;
+	position: absolute;
+	left: 730px;
+	padding: 2px;
+}
+
+footer section.first div.social h2 {
+	/*border: 2px solid black; /* ilustrativo */
+	margin: 2px 0 4px 2px;
+	font-size: 16px;
+	color: #aa0000;
+}	
+
+footer section.first div.social div#phone {
+	/*border: 2px solid black; /* ilustrativo */
+	display: inline-block;
+	background-image: url("../img/phone.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 4px 0 4px 22px;
+	margin: 2px 0 1px 2px;
+	font-weight: bold;
+}
+
+footer section.first div.social div#email {
+	/*border: 2px solid black; /* ilustrativo */
+	display: inline-block;
+	background-image: url("../img/email.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 4px 0 4px 22px;
+	margin: 2px 0 1px 2px;
+	font-weight: bold;
+}
+
+footer section.first div.social div#address {
+	/*border: 2px solid black; /* ilustrativo */
+	display: inline-block;
+	background-image: url("../img/address.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 4px 0 4px 22px;
+	margin: 2px 0 1px 2px;
+	font-weight: bold;
+}
+/* ^^^^^^^^^^^^ */
+
+/* Tudo corespondente a segunda section da footer */
+
+footer section.second {
+	height: 16px;
+	text-align: center;
+	font-size: 10px;
+	padding: 8px 0 4px 0;
+	background-color: #820000;
+	color: white;
 }

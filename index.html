@@ -8,13 +8,16 @@
 		<link rel="stylesheet" type="text/css" href="css/inicio.css">
 		<!-- File jQuery v1.11.3 -->
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/menu_main.js"></script>
+		<!-- Efeito do Menu Principal -->
+		<script type="text/javascript" src="js/menu-main.js"></script>
+		<!-- Slide de imagens -->
+		<script type="text/javascript" src="js/slide.js"></script>
 	</head>
 	
 	<body>
 		<header>						
 			<nav>
-				<div id="little_logo">Prefeitura Municipal de Mauriti</div>
+				<div id="little-logo">Prefeitura Municipal de Mauriti</div>
 				<ul class="menu">
 					<li><a href="#" class="selected">Início</a></li>
 					<li><a href="#">Notícias</a></li>
@@ -26,9 +29,57 @@
 			</nav>
 		</header>
 
-		<section>
-			conteudo
+		<section class="conteudo">
+			<figure id="slide">
+				<img src="img/slide/imagem1.jpg" alt="ESCOLAS DA REDE MUNICIPAL DE MAURITI RECEBEM MATERIAL DIDÁTICO">
+				<img src="img/slide/imagem2.jpg" alt="MAIS EQUIPAMENTOS CHEGAM PARA O HOSPITAL DE MAURITI">
+				<img src="img/slide/imagem3.jpg" alt="GOVERNO DE MAURITI CONCLUI ESGOTAMENTO SANITÁRIO DO CONJUNTO JOÃO PAULO II EM PALESTINA">
+			</figure>
+
+			<!--<div class="governo">
+				<p>GOVERNO</p>
+				<ul>
+					<li><a href="#">Convênios</a></li>
+					<li><a href="#">Despesas</a></li>
+					<li><a href="#">Receitas</a></li>
+					<li><a href="#">Leis Municipais</a></li>
+					<li><a href="#">Legislação</a></li>
+				</ul>
+			</div>
+
+			<div class="servicos">
+			</div>-->
 		</section>
+
+		<footer>
+			<section class="first">
+				<div class="footer-logo"></div>
+				<div class="desc-mauriti">
+					<h1>Prefeitura Municipal de Mauriti</h1>
+					<p>Um governo popular se diferencia dos outros pelo modo como a administração é compreendida. A ordem de prioridade, a definição de estratégias, a decisão do que será imprescindível fazer. Assim, a gestão de Mauriti se define. </p>
+				</div>
+				<div class="social">
+					<h2>Contatos:</h2>
+					<div id="phone">
+						(88) 3552-2387  
+					</div>
+
+					<div id="email">
+						pref.mauriti@contato.com  
+					</div> 
+
+					<div id="address">
+						Rua José Quintino, Nº 345  
+					</div>  
+				</div>
+			</section>
+
+			<section class="second">
+				Copyright &copy; 2015 Governo Municipal de Mauriti. Todos os direitos reservados.
+			</section>
+		</footer>
+
+
 
 	</body>
 </html>
