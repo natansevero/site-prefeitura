@@ -51,6 +51,11 @@ nav div#little-logo {
 	padding-top: 15px; 
 }
 
+nav div#little-logo a{
+	text-decoration: none;
+	color: #aa0000;
+}
+
 
 nav ul.menu{
 	/*border: 2px solid black; /* ilustrativo */
@@ -74,7 +79,7 @@ nav ul.menu li a {
 	padding: 20px 10px 20px 10px;
 	text-decoration: none;
 	color: #aa0000;
-	margin-left: -17px;
+	margin-left: -20px;
 }
 
 nav ul.menu li a:hover {
@@ -277,6 +282,64 @@ div.little-imgs img#img2, div.little-imgs img#img3, div.little-imgs img#img4 {
 }
 
 /* ^^^^^^^^ */
+
+
+
+
+
+/* Página "Notícias" */
+section.conteudo-noticias {
+
+}
+
+
+/* ^^^^^^^^^^ */
+
+
+
+
+/* Página "Secretarias" */
+section.conteudo-secretarias {
+	
+}
+
+
+/* ^^^^^^^^^^ */
+
+
+
+
+/* Página "Fotos" */
+section.conteudo-fotos {
+	
+}
+
+
+/* ^^^^^^^^^^ */
+
+
+
+
+
+/* Página "mapa" */
+section.conteudo-mapa {
+	
+}
+
+
+/* ^^^^^^^^^^ */
+
+
+
+
+
+/* Página "Contao" */
+section.conteudo-contato {
+	
+}
+
+
+/* ^^^^^^^^^^ */
 
 
 
