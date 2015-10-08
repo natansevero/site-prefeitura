@@ -22,6 +22,7 @@ header {
 	background-image: url("../img/header-logo.jpg");
 	background-repeat: no-repeat;
 	background-position: bottom; 
+	margin-bottom: 10px; 
 }
 
 /* Tudo relacionado a NAV */
@@ -30,20 +31,12 @@ nav {
 	border: 5px solid #aa0000; 
 	border-radius: 10px;
 	padding: 4px; 
-	position: absolute;
+	position: fixed;
 	width: 1006px;
 	height: 52px;
 	background-color: white;
 	z-index: 999;
 }
-
-/* CSS efeito do Menu Fixo do JQuery */
-.menu-fixo {
-	position: fixed;
-	z-index: 999;
-	top: 0;
-}
-/* ^^^^^^^^^^ */
 
 nav div#little-logo {
 	/* border: 2px solid black; /* ilustrativo */
@@ -103,53 +96,202 @@ nav ul.menu li a.selected {
 	padding-bottom: 2px;*/
 }
 
-/* SECTION do conteúdo da página */
 
-section.conteudo {
+
+
+
+
+
+/* CSS REFERENTES, SEPARADAMENTE, A TODAS AS PAGINAS DO SITE */
+
+/* SECTION do conteúdo da página de INICIO */
+
+section.conteudo-inicio {
 	/*border: 2px solid black; /* Ilustrativo */
-	height: 1000px; /* Ilustrativo */
+	/*height: 4000px; /* Ilustrativo */
+	padding: 4px;
+	position: relative;
+}
+
+/* Pequeno menu GOVERNO e alguma funcionalidades do pequeno MENU SERVIÇOS */
+
+section.conteudo-inicio div.governo {
+	border: 2px solid black;
+	border-radius: 10px; 
+	display: inline-block;
+	padding: 4px;
+	background-color: #aa0000;
+	color: white;
+	margin: 4px 0 0 4px; 
+	float: left; 
+}
+
+section.conteudo-inicio div.governo p, section.conteudo-inicio div.servicos p {
+	/*border: 2px solid black; /* ilustrativo */
+	display: inline-block;
+	margin-bottom: 4px;
+	margin-left: 30px;
+	font-size: 18px; 
+}
+
+section.conteudo-inicio div.governo ul, section.conteudo-inicio div.servicos ul {
+	/*border: 2px solid black; /* ilustraivo */
+	list-style: none;
+	padding: 2px;
+}
+
+section.conteudo-inicio div.governo ul li, section.conteudo-inicio div.servicos ul li {
+	/*border: 2px solid black; /* ilustraivo */
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+section.conteudo-inicio div.governo ul li a, section.conteudo-inicio div.servicos ul li a {
+	border: 2px solid black;
+	border-radius: 10px;
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	display: inline-block;
+	width: 140px;
 	padding: 4px;
 }
 
-
-
-/* Tudo relacionado ao Slide */
-figure#slide { 
-	width: 1016px;
-	height: 500px; 
-	overflow: hidden;  
-	margin: 10px auto; 
-	box-shadow: 0 0 8px #000; 
-	position: relative; 
-} 
-
-#slide img { 
-	position: absolute; 
-	z-index: 1; 
-	display: none; 
-	left: 0; 
-} 
-
-#slide a p{ 
-	z-index:2; 
-	position: absolute; 
-	bottom: 0; 
-	left: 0; 
-	width: 100%; 
-	padding: 10px; 
-	font-family: "Robot", sans-serif; 
-	font-size: 18px; 
-	background: rgba(0,0,0,0.5); 
-	color: #fff;
-	text-decoration: none; 
+section.conteudo-inicio div.governo ul li a:hover, section.conteudo-inicio div.servicos ul li a:hover {
+	background-color: #c0c0c0;
 }
 
-#slide a p:hover{ 
- 	text-decoration: underline;
 
+/* Pequeno menu SERVIÇOS */
+/* Algumas funcionalidades estão no CSS do pequeno MENU GOVERNO */
+
+section.conteudo-inicio div.servicos { /* modificado */
+	border: 2px solid black;
+	border-radius: 10px; 
+	display: inline-block;
+	padding: 4px;
+	background-color: #aa0000;
+	color: white;
+	position: absolute;
+	right: 4px;
+	margin: 4px 4px 0 0; 
+	float: right; 
+}
+
+
+/* Texto de Apresentação */
+section.conteudo-inicio div.apresentacao {
+	/*border: 1px solid black; /* Ilustrativo 
+	border-radius: 10px;*/
+	display: inline-block;
+	width: 550px;
+	text-align: center; /* Está afetando somente o H1 */
+	font-size: 18px; /* Está afetando somente o H1 */
+	margin: 4px 0 0 56px;
+	padding: 6px 4px 4px 4px;
+}
+
+section.conteudo-inicio div.apresentacao p#para1 {
+	text-align: justify;
+	font-size: 16px;
+	margin-top: 8px;
+	text-indent: 20px;
+}
+
+section.conteudo-inicio div.apresentacao p#para2 {
+	text-align: justify;
+	font-size: 16px;
+	margin-top: 8px;
+	text-indent: 20px;
+}
+
+
+/* Noticia destaque */
+div.noticias-destaque {
+	/*border: 1px solid black; /* ilustrativo */
+	display: block;
+	margin: 20px 0 0 0;
+	padding: 6px 4px 4px 4px;
+}
+
+div.noticias-destaque h1 {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #aa0000;
+	color: white;
+	padding: 4px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* Destaque 1 */
+div.noticias-destaque div#destaque1 {
+	background-image: url("../img/noticias/noticia-destaque1.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding-left: 270px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+
+div.noticias-destaque div#destaque1 a, div.noticias-destaque div#destaque2 a {
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+div.noticias-destaque div#destaque1 a:hover, div.noticias-destaque div#destaque2 a:hover {
+	text-decoration: underline;
+}
+
+div.noticias-destaque div#destaque1 p, div.noticias-destaque div#destaque2 p {
+	text-indent: 20px;
+	margin-top: 20px;
+	text-align: justify;
+	width: 650px;
+	font-size: 14px; 
+}
+
+/* Destaque 2 */
+
+div.noticias-destaque div#destaque2 {
+	background-image: url("../img/noticias/noticia-destaque2.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding-left: 270px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+
+/* Imagems próximas ao rodapé */
+/* Não irei mexxer na imagem1 pois ele já está no lugar certo */
+div.little-imgs img#img2, div.little-imgs img#img3, div.little-imgs img#img4 {
+	margin: 0 auto;
+	margin-left: 109px;
 }
 
 /* ^^^^^^^^ */
+
+
+
+
+
+/* Página "Em Construção" */
+section.conteudo-em-construcao {
+	height: 455px;
+	background-image: url("../img/em-construcao/em-construcao.jpg");
+	background-repeat: no-repeat;
+}
+/* ^^^^^^^^ */
+
+
+
 
 /* Footer(Rodapé da página) */
 

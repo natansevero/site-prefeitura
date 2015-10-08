@@ -5,21 +5,16 @@
 		<title>Início - Prefeitura de Mauriti-CE</title>
 		<!-- Files CSS -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/inicio.css">
-		<!-- File jQuery v1.11.3 -->
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<!-- Efeito do Menu Principal -->
-		<script type="text/javascript" src="js/menu-main.js"></script>
-		<!-- Slide de imagens -->
-		<script type="text/javascript" src="js/slide.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	</head>
 	
 	<body>
+		<!-- Cabeçalho e Barra de Navegação Principal --> 
 		<header>						
 			<nav>
 				<div id="little-logo">Prefeitura Municipal de Mauriti</div>
 				<ul class="menu">
-					<li><a href="#" class="selected">Início</a></li>
+					<li><a href="index.html" class="selected">Início</a></li>
 					<li><a href="#">Notícias</a></li>
 					<li><a href="#">Telefones</a></li>
 					<li><a href="#">Fotos</a></li>
@@ -29,28 +24,62 @@
 			</nav>
 		</header>
 
-		<section class="conteudo">
-			<figure id="slide">
-				<img src="img/slide/imagem1.jpg" alt="ESCOLAS DA REDE MUNICIPAL DE MAURITI RECEBEM MATERIAL DIDÁTICO">
-				<img src="img/slide/imagem2.jpg" alt="MAIS EQUIPAMENTOS CHEGAM PARA O HOSPITAL DE MAURITI">
-				<img src="img/slide/imagem3.jpg" alt="GOVERNO DE MAURITI CONCLUI ESGOTAMENTO SANITÁRIO DO CONJUNTO JOÃO PAULO II EM PALESTINA">
-			</figure>
-
-			<!--<div class="governo">
+		<!-- Conteúdo -->
+		<section class="conteudo-inicio">
+			<div class="governo">
 				<p>GOVERNO</p>
 				<ul>
-					<li><a href="#">Convênios</a></li>
-					<li><a href="#">Despesas</a></li>
-					<li><a href="#">Receitas</a></li>
-					<li><a href="#">Leis Municipais</a></li>
-					<li><a href="#">Legislação</a></li>
+					<li><a href="em-construcao.html">Convênios</a></li>
+					<li><a href="em-construcao.html">Despesas</a></li>
+					<li><a href="em-construcao.html">Receitas</a></li>
+					<li><a href="em-construcao.html">Leis Municipais</a></li>
+					<li><a href="em-construcao.html">Legislação</a></li>
 				</ul>
 			</div>
 
 			<div class="servicos">
-			</div>-->
+				<p>SERVIÇOS</p>
+				<ul>
+					<li><a href="em-construcao.html">Transparência</a></li>
+					<li><a href="em-construcao.html">Concurso</a></li>
+					<li><a href="em-construcao.html">NF-e</a></li>
+					<li><a href="em-construcao.html">Ouvidoria</a></li>
+					<li><a href="em-construcao.html">Licitações</a></li>
+				</ul>
+			</div>
+
+			<!-- Texto de Apresentação -->
+			<div class="apresentacao">
+				<h1>Apresentação</h1>
+				<p id="para1">O governo Municipal de Mauriti tem por objetivo o trabalho para todos e buscará nos próximos anos dar uma maior amplitude ao Orçamento Participativo para trazer as comunidades para dentro da gestão, ouvindo os anseios do povo e buscando solucionar as demandas oriundas da população mauritiense.</p>
+				<p id="para2">Ainda compreendendo o que é mais importante para o povo de nossa cidade, desde 2005, quando o modo petista de governar foi implantado na prefeitura de Mauriti, os avanços na área da educação não pararam e deverão ser uma das prioridades da nova gestão. </p>
+			</div>
+
+			<!-- Noticia destaque -->
+			<div class="noticias-destaque">
+				<h1>Notícias Destaque</h1>
+				<div id="destaque1">
+					<a href="noticia1.html"><h2>ESCOLAS DA REDE MUNICIPAL DE MAURITI RECEBEM MATERIAL DIDÁTICO</h2></a>
+					<p>O Governo Municipal de Mauriti, por meio da Secretaria de Educação, realizou nesta segunda-feira (14 Setembro), a entrega de materiais didáticos a toda as unidades escolares da rede municipal.</p>
+				</div>
+
+				<div id="destaque2">
+					<a href="noticia3.html"><h2>GOVERNO DE MAURITI CONCLUI ESGOTAMENTO SANITÁRIO DO CONJUNTO JOÃO PAULO II EM PALESTINA</h2></a>
+					<p>Na última sexta-feira (18 Setembro), o Governo Municipal de Mauriti, concluiu o esgotamento sanitário do Conjunto João Paulo II, também no Distrito de Palestina, a exemplo do Sistema de Esgotamento Sanitário, entregue na comunidade, que deverá receber toda a rede coletora existente.</p>
+				</div>
+			</div>
+
+			<!-- Imagems próximas ao rodapé -->
+
+			<div class="little-imgs">
+				<img src="img/img-aside/camara-mauriti.png" id="img1">
+				<img src="img/img-aside/governo-ceara.png" id="img2">
+				<img src="img/img-aside/logo-diario.jpg" id="img3">
+				<img src="img/img-aside/portal-servidor.jpg" id="img4">
+			</div> 
 		</section>
 
+		<!-- Rodapé da Página -->
 		<footer>
 			<section class="first">
 				<div class="footer-logo"></div>
