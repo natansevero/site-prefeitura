@@ -229,18 +229,17 @@ div.noticias-destaque h1 {
 	padding: 4px;
 	font-size: 18px;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 2px;
 }
 
 /* Destaque 1 */
 div.noticias-destaque div#destaque1 {
-	background-image: url("../img/noticias/noticia-destaque1.jpg");
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/destaque/noticia-destaque1.jpg");
 	background-repeat: no-repeat;
 	background-position: left;
 	height: 120px;
-	padding-left: 270px;
-	padding-bottom: 10px;
-	border-bottom: 2px solid black;
+	padding: 10px 0 10px 270px;
 }
 
 div.noticias-destaque div#destaque1 a, div.noticias-destaque div#destaque2 a {
@@ -264,15 +263,17 @@ div.noticias-destaque div#destaque1 p, div.noticias-destaque div#destaque2 p {
 /* Destaque 2 */
 
 div.noticias-destaque div#destaque2 {
-	background-image: url("../img/noticias/noticia-destaque2.jpg");
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/destaque/noticia-destaque2.jpg");
 	background-repeat: no-repeat;
 	background-position: left;
 	height: 120px;
-	padding-left: 270px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-bottom: 2px solid black;
+	padding: 10px 0 10px 270px;
 }
+
+
+
+
 
 /* Imagems próximas ao rodapé */
 /* Não irei mexxer na imagem1 pois ele já está no lugar certo */
@@ -289,9 +290,113 @@ div.little-imgs img#img2, div.little-imgs img#img3, div.little-imgs img#img4 {
 
 /* Página "Notícias" */
 section.conteudo-noticias {
-
+	padding: 4px;
+	position: relative;
 }
 
+div.noticias {
+	display: block;
+	padding: 6px 4px 4px 4px;
+}
+
+div.noticias h1 {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #aa0000;
+	color: white;
+	padding: 4px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+/* Noticias 1 e CSS's abaixo estão tbm aplicado em outras noticias */
+div.noticias div#noticia1 {
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/noticia1.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding: 10px 0 10px 270px;
+} /* GG */
+
+div.noticias div#noticia1 a, div.noticias div#noticia2 a, div.noticias div#noticia3 a,
+div.noticias div#noticia4 a, div.noticias div#noticia5 a, div.noticias div#noticia6 a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+div.noticias div#noticia1 a:hover, div.noticias div#noticia2 a:hover, div.noticias div#noticia3 a:hover,
+div.noticias div#noticia4 a:hover, div.noticias div#noticia5 a:hover, div.noticias div#noticia6 a:hover 
+{
+	text-decoration: underline;
+}
+
+div.noticias div#noticia1 p, div.noticias div#noticia2 p, div.noticias div#noticia3 p,
+div.noticias div#noticia4 p, div.noticias div#noticia5 p, div.noticias div#noticia6 p {
+	text-indent: 20px;
+	margin-top: 20px;
+	text-align: justify;
+	width: 650px;
+	font-size: 14px; 
+}
+
+/* Noticias 2 */
+
+div.noticias div#noticia2 {
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/noticia2.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding: 10px 0 10px 270px;
+}
+
+/* Noticia 3 (noticia1-construcao) */
+
+div.noticias div#noticia3 {
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/noticia1-construcao.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding: 10px 0 10px 270px;
+}
+
+/* Noticia 4 (noticia2-construcao) */
+
+div.noticias div#noticia4 {
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/noticia2-construcao.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding: 10px 0 10px 270px;
+}
+
+/* Noticia 5 (noticia5-construcao) */
+
+div.noticias div#noticia5 {
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/noticia3-construcao.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding: 10px 0 10px 270px;
+}
+
+/* Noticia 6 (noticia1-construcao) */
+
+div.noticias div#noticia6 {
+	border-bottom: 2px solid black;
+	background-image: url("../img/noticias/noticia4-construcao.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	height: 120px;
+	padding: 10px 0 10px 270px;
+}
 
 /* ^^^^^^^^^^ */
 
@@ -340,6 +445,27 @@ section.conteudo-contato {
 
 
 /* ^^^^^^^^^^ */
+
+
+
+/* Página "NOTICIA1.HTML" */
+section.conteudo-noticia1 {
+	padding: 4px;
+	position: relative;
+}
+
+
+/* GG */
+
+
+/* Página "NOTICIA2.HTML" */
+section.conteudo-noticia2 {
+	padding: 4px;
+	position: relative;
+}	
+
+
+/* GG */
 
 
 
