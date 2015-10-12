@@ -462,9 +462,48 @@ div.secretarias a:hover {
 
 /* Página "Fotos" */
 section.conteudo-fotos {
-	
+	padding: 4px;
+	position: relative;
 }
 
+section.conteudo-fotos h1 {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #aa0000;
+	color: white;
+	padding: 6px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+div.fotos {
+	margin: 10px auto;
+	padding: 6px 4px 0 4px;
+	width: 950px;
+	height: 690px;
+	text-align: center;
+}
+
+div.fotos figure#foto1, div.fotos figure#foto2,
+div.fotos figure#foto3, div.fotos figure#foto4 {
+	display: inline-block;
+	margin: 0 30px 40px 30px;
+}
+
+div.fotos figure#foto1 img, div.fotos figure#foto2 img,
+div.fotos figure#foto3 img, div.fotos figure#foto4 img {
+	display: block;
+}
+
+div.fotos figure#foto1 figcapition, div.fotos figure#foto2 figcapition,
+div.fotos figure#foto3 figcapition, div.fotos figure#foto4 figcapition {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold; 
+}
 
 
 
