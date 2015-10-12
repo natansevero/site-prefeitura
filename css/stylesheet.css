@@ -536,7 +536,46 @@ section.conteudo-contato h1 {
 	margin-bottom: 2px;
 }
 
+form {
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 6px;
+	width: 470px;
+	margin: 10px auto;
+}
 
+form label {
+	display: block;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+
+form input {
+	font-size: 16px;
+	height: 20px;
+}
+
+form textarea {
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	display: block;
+	margin-bottom: 6px;
+	resize: none;
+}
+
+form div.buttons {
+	text-align: center;
+}
+
+form div.buttons input#button {
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
 /* ^^^^^^^^^^ */
 
 

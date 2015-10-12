@@ -8,6 +8,12 @@
 		<!-- Files CSS -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<!-- JavaScript -->
+		<script type="text/javascript">
+			function enviar() {
+				alert("Sua mensagem foi enviada com sucesso!");
+			}
+		</script>
 	</head>
 	
 	<body>
@@ -29,15 +35,24 @@
 		<!-- Conteúdo -->
 		<section class="conteudo-contato">
 			<h1>Contato</h1>
-			<div class="contato">
- 				<label>Nome:</label> <input type="text" name="nome" size="20" placeholder="Nome" >
- 				<label>Email:</label> <input type="text" name="nome" size="20" placeholder="Nosse">
-			</div>
+			<form name="form_contato" action="" method="post">
+ 				<label>Nome:</label> 
+ 				<input type="text" name="nome" size="30" placeholder="Nome" >
+ 				<label>Email:</label> 
+ 				<input type="email" name="email" size="30" placeholder="Email">
+ 				<label>Assunto:</label>
+ 				<input type="text" name="assunto" size="30" placeholder="Assunto">
+				<label>Mensagem:</label>
+				<textarea cols="50" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
 
-			
-				<textarea rows="2"></textarea>
-		
+				<div class="buttons">
+					<input type="submit" id="button" onclick="enviar()" value="Enviar">
+					<input type="reset" id="button" value="Limpar">
+				</div>
+			</form>
 		</section>
+
+		
 
 		<!-- Rodapé da Página -->
 		<footer>
