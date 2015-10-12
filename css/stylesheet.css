@@ -457,10 +457,17 @@ div.secretarias a:hover {
 
 
 
+
+
+
 /* Página "Fotos" */
 section.conteudo-fotos {
 	
 }
+
+
+
+
 
 
 /* ^^^^^^^^^^ */
@@ -537,9 +544,9 @@ section.conteudo-contato h1 {
 }
 
 form {
-	border: 2px solid black;
-	border-radius: 10px;
-	padding: 6px;
+	/*border: 2px solid black;
+	border-radius: 10px;*/
+	padding: 4px;
 	width: 470px;
 	margin: 10px auto;
 }
@@ -554,14 +561,16 @@ form label {
 form input {
 	font-size: 16px;
 	height: 20px;
+	width: 470px;
 }
 
 form textarea {
 	font-size: 16px;
 	font-family: Verdana, Geneva, sans-serif;
 	display: block;
-	margin-bottom: 6px;
+	margin-bottom: 16px;
 	resize: none;
+	width: 470px;
 }
 
 form div.buttons {
