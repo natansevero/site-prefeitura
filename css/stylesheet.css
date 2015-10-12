@@ -521,11 +521,25 @@ div.mapa p {
 
 /* Página "Contao" */
 section.conteudo-contato {
-	
+	padding: 4px;
+	position: relative;
+}
+
+section.conteudo-contato h1 {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #aa0000;
+	color: white;
+	padding: 6px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 2px;
 }
 
 
 /* ^^^^^^^^^^ */
+
+
 
 
 
