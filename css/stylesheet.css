@@ -135,7 +135,7 @@ section.conteudo-inicio div.governo p, section.conteudo-inicio div.servicos p {
 	/*border: 2px solid black; /* ilustrativo */
 	display: inline-block;
 	margin-bottom: 4px;
-	margin-left: 30px;
+	margin-left: 32px;
 	font-size: 18px; 
 }
 
@@ -269,7 +269,7 @@ div.noticias-destaque div#destaque2 {
 
 
 /* Imagems próximas ao rodapé */
-/* Não irei mexxer na imagem1 pois ele já está no lugar certo */
+/* Não irei mexer na imagem1 pois ele já está no lugar certo */
 div.little-imgs img#img2, div.little-imgs img#img3, div.little-imgs img#img4 {
 	margin: 0 auto;
 	margin-left: 109px;
@@ -287,20 +287,20 @@ section.conteudo-noticias {
 	position: relative;
 }
 
-div.noticias {
-	display: block;
-	padding: 6px 4px 4px 4px;
-}
-
-div.noticias h1 {
+section.conteudo-noticias h1 {
 	border: 2px solid black;
 	border-radius: 10px;
 	background-color: #aa0000;
 	color: white;
-	padding: 4px;
+	padding: 6px;
 	font-size: 18px;
 	text-align: center;
 	margin-bottom: 2px;
+}
+
+div.noticias {
+	display: block;
+	padding: 6px 4px 4px 4px;
 }
 
 /* Noticias 1 e CSS's abaixo estão tbm aplicado em outras noticias */
@@ -398,10 +398,57 @@ div.noticias div#noticia6 {
 
 /* Página "Secretarias" */
 section.conteudo-secretarias {
+	padding: 4px;
+	position: relative;	
+}
 
+section.conteudo-secretarias h1 {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #aa0000;
+	color: white;
+	padding: 6px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+}
 
+div.secretarias {
+	display: block;
+	padding: 6px 4px 0 4px;
+	width: 900px;
+	margin: 10px auto;
+	text-align: center;
+}
 
-	
+div.secretarias div#secretaria1, div.secretarias div#secretaria2, div.secretarias div#secretaria3,
+div.secretarias div#secretaria4, div.secretarias div#secretaria5, div.secretarias div#secretaria6,
+div.secretarias div#secretaria7, div.secretarias div#secretaria8, div.secretarias div#secretaria9, 
+div.secretarias div#secretaria10 {
+	border: 2px solid black;
+	border-radius: 10px; 
+	display: inline-block;
+	background-color: #aa0000;
+	color: white; /* Afetando somente o numero */
+	text-align: center;
+	margin: 10px 100px 10px 100px;
+	padding: 16px;
+	width: 200px;
+	/*position: absolute;
+	right: 4px;*/ 
+}
+
+div.secretarias a {
+	display: block;	
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+div.secretarias a:hover {
+	text-decoration: underline;
 }
 
 
@@ -424,7 +471,45 @@ section.conteudo-fotos {
 
 /* Página "mapa" */
 section.conteudo-mapa {
-	
+	padding: 4px;
+	position: relative;
+}
+
+section.conteudo-mapa h1 {
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #aa0000;
+	color: white;
+	padding: 6px;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+div.mapa {
+	border: 2px solid black;
+	border-radius: 10px;
+	display: block;
+	padding: 6px 4px 0 4px;
+	width: 950px;
+	margin: 10px auto;
+	text-align: right;
+}
+
+div.mapa p {
+	border: 2px solid #e0dedf;
+	border-radius: 10px;
+	display: inline-block;
+	width: 250px;
+	text-align: justify;
+	font-weight: bold;
+	background-color: #aa0000;
+	color: white;
+	padding: 8px;
+	font-size: 16px;
+	position: absolute;
+	top: 58px;
+	left: 38px;
 }
 
 
@@ -520,6 +605,8 @@ footer {
 }
 
 footer section.first {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	height: 104px;
 	padding: 4px;
 	background-color: #aa0000;
@@ -622,6 +709,8 @@ footer section.first div.social div#address {
 /* Tudo corespondente a segunda section da footer */
 
 footer section.second {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	height: 16px;
 	text-align: center;
 	font-size: 10px;
