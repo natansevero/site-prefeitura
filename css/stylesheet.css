@@ -15,7 +15,7 @@ header, nav, section, footer {
 div.loader { 
 	width: 200px; 
 	height: 200px;
-	margin: 200px 410px; 
+	margin: 220px 410px; 
 	position:fixed;
 	background-image: url("../img/loader/loader.gif");
 	background-repeat: no-repeat;
