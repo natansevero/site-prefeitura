@@ -6,6 +6,25 @@
 	padding: 0;
 }
 
+/* Css para o loader */
+
+header, nav, section, footer {
+	display: none;
+}
+
+div.loader { 
+	width: 200px; 
+	height: 200px;
+	margin: 200px 410px; 
+	position:fixed;
+	background-image: url("../img/loader/loader.gif");
+	background-repeat: no-repeat;
+}
+
+
+/* ^^^^^^^^^^^^^^ */
+
+
 body {
 	/*border: 2px dashed black; /* ilustrativo */
 	/*height: 5000px; /* Ilustrativo */
@@ -480,33 +499,107 @@ section.conteudo-fotos h1 {
 div.fotos {
 	margin: 10px auto;
 	padding: 6px 4px 0 4px;
-	width: 950px;
-	height: 690px;
+	width: 990px;
+	height: 540px;
 	text-align: center;
 }
 
 div.fotos figure#foto1, div.fotos figure#foto2,
-div.fotos figure#foto3, div.fotos figure#foto4 {
+div.fotos figure#foto3, div.fotos figure#foto4,
+div.fotos figure#foto5, div.fotos figure#foto6 {
 	display: inline-block;
-	margin: 0 30px 40px 30px;
+	margin: 0 13px 40px 13px;
+	cursor: pointer;
 }
 
 div.fotos figure#foto1 img, div.fotos figure#foto2 img,
-div.fotos figure#foto3 img, div.fotos figure#foto4 img {
+div.fotos figure#foto3 img, div.fotos figure#foto4 img,
+div.fotos figure#foto5 img, div.fotos figure#foto6 img {
 	display: block;
 }
 
 div.fotos figure#foto1 figcapition, div.fotos figure#foto2 figcapition,
-div.fotos figure#foto3 figcapition, div.fotos figure#foto4 figcapition {
+div.fotos figure#foto3 figcapition, div.fotos figure#foto4 figcapition,
+div.fotos figure#foto5 figcapition, div.fotos figure#foto6 figcapition {
 	display: block;
 	text-align: center;
 	margin-top: 10px;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: bold; 
 }
 
+/* Css da Modal */
+
+#modal { 
+	background:rgba(0,0,0, 0.5); 
+	width:100%; 
+	height:100%; 
+	position:fixed; 
+	left:0; 
+	top:0; 
+	display: none;
+	z-index: 1000;
+} 
+
+.modal-box { 
+	background:#FFF; 
+	width:600px; 
+	height:450px; 
+	position:absolute; 
+	left:60%; 
+	top:35%; 
+	margin-left:-32%; 
+	margin-top:-100px;
+}
+
+.fechar { 
+	padding:5px 10px; 
+	border:1px 
+	solid #CCC; 
+	position:absolute; 
+	right:3px; top:3px; 
+	border-radius:7px; 
+	color:#CCC; 
+	cursor:pointer;
+}
+
+.fechar:hover { 
+	color:#666; 
+	border-color:#666;
+}
 
 
+/* Adicionando classes para a modal */
+
+.foto1 {
+	background-image: url("../img/fotos/modal/igreja-matriz-modal.jpg");
+	background-repeat: no-repeat;
+}
+
+.foto2 {
+	background-image: url("../img/fotos/modal/cem-modal.jpg");
+	background-repeat: no-repeat;
+}
+
+.foto3 {
+	background-image: url("../img/fotos/modal/centro-mauriti-modal.jpg");
+	background-repeat: no-repeat;
+}
+
+.foto4 {
+	background-image: url("../img/fotos/modal/praca-andre-cartaxo-modal.jpg");
+	background-repeat: no-repeat;
+}
+
+.foto5 {
+	background-image: url("../img/fotos/modal/hospital-modal.jpg");
+	background-repeat: no-repeat;
+}
+
+.foto6 {
+	background-image: url("../img/fotos/modal/salao-paroquial-modal.jpg");
+	background-repeat: no-repeat;
+}
 
 
 /* ^^^^^^^^^^ */

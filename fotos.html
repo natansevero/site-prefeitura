@@ -8,9 +8,19 @@
 		<!-- Files CSS -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<!-- Chamando jQuery v1.11.3 -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- JS da Modal -->
+		<script type="text/javascript" src="js/modal.js"></script>
+		<!-- Chamando jQuery v1.11.3 -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<!-- JS do Loader do começo da página -->
+		<script type="text/javascript" src="js/loader.js"></script>
 	</head>
-	
+
 	<body>
+		<!-- POG do Loader -->
+		<div class="loader"></div>
 		<!-- Cabeçalho e Barra de Navegação Principal --> 
 		<header>						
 			<nav>
@@ -51,7 +61,24 @@
 					<figcapition>Praça André Cartaxo</figcapition>
 				</figure>
 
+				<figure id="foto5">
+					<img src="img/fotos/hospital.jpg" title="Hospital e Maternidade São José">
+					<figcapition>Hospital e Maternidade São José</figcapition>
+				</figure>
+
+				<figure id="foto6">
+					<img src="img/fotos/salao-paroquial.jpg" title="Salão Paroquial">
+					<figcapition>Salão Paroquial</figcapition>
+				</figure>
 			</div>
+
+			<div id="modal">
+    			<div class="modal-box">
+        		<div class="modal-box-conteudo"></div>
+            	<div class="fechar">X</div>
+        	</div>
+    </div>
+
 		</section>
 
 		<!-- Rodapé da Página -->
